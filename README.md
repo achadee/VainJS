@@ -8,15 +8,22 @@ VainJS is a simple chain validation tool that allows fields to be verified and v
 * When all conditions must be met. VainJS validates with AND operators.
 
 ##Setup
-It's pretty straightforward to start Vain JS. Just require it and use an instance.
+It's pretty straightforward to start VainJS. Just require it and use an instance.
 
-	{var validate = require('vain-js');}
+	var validate = require('vain-js');
 
-##Variables
-###Template Syntax
-The most basic example looks like this:
+##Methods
+VainJS provides a number of single value and multi value (arrays) methods
+###Single value
+`exists()` - checks if the value exists, values of 0 will return true.
+`is(operator, compare_value, parameter_name)` - compares the value with a given compare value and operater. available operators include:
+* `==`
+* `!=`
+* `>=`
+* `>`
+* `<`
+* `<=`
 
-	{$name}
 
 If {$name} doesn't contain any value, null is returned. It's also possible to use a dot as a separator.
 
