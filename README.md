@@ -35,13 +35,13 @@ return validate(age).is('>=', legal_age, 'Legal age').status;
 ```
 	false
 
-The parameter tag is there for the 'reason' field that is sent back in the response.
+The parameter tag is there for the `reason` field that is sent back in the response.
 ```javascript
 return validate(age).is('>=', legal_age, 'Legal age').reason;
 ```
 	'Field with value (17) needs to be greater than or equal to Legal Age'
 	
-All methods return a Vain object with both a status and a reason. You can imporve the 'reason' by providing a tag for the value that is under scope.
+All methods return a Vain object with both a status and a reason. You can imporve the `reason` by providing a tag for the value that is under scope.
 ```javascript
 return validate(age, 'Members age').is('>=', legal_age, 'Legal age').reason;
 ```
