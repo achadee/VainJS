@@ -17,7 +17,7 @@ var validate = require('vain-js');
 VainJS provides a number of single value and multi value (arrays) methods
 ###Single value
 
-#### Exists()
+#### exists()
 Checks if the value exists, values of 0 will return true.
 ```javascript
 var password = '';
