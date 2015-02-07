@@ -18,12 +18,14 @@ VainJS provides a number of single value and multi value (arrays) methods
 
 #### Exists()
 Checks if the value exists, values of 0 will return true.
+
 	var password = '';
 	return validate(password).exists().status;
 	// returns false
 
 #### is(operator, compare_value, parameter_tag)
 compares the value with a given compare value and operater. available operators include `==`, `!=`, `>=`, `>`, `<`, `<=`
+	
 	var age = 17;
 	var legal_age = 18;
 	return validate(age).is('>=', legal_age, 'Legal age').status;
