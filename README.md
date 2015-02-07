@@ -10,7 +10,7 @@ VainJS is a simple chain validation tool that allows fields to be verified and v
 ##Setup
 It's pretty straightforward to start Vain JS. Just require it and use an instance.
 
-{var validate = require('vain-js');}
+	{var validate = require('vain-js');}
 
 ##Variables
 ###Template Syntax
