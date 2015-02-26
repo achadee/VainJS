@@ -46,3 +46,17 @@ All methods return a Vain object with both a status and a reason. You can imporv
 return validate(age, 'Members age').is('>=', legal_age, 'Legal age').reason;
 ```
 	'Members age needs to be greater than or equal to Legal Age'
+
+#### rule(callback(data,args...), reason)
+For more costum validation vain allows you to pass a callback with a custom method that just return true or false weather it is valid or not. The first field of the callback will be the data followed by any number of arguments you need after.
+
+```javascript
+var name = 'john';
+var lastname = 'smith';
+
+function isJohn(data, lastname){
+	return data === 'John' && lastname === 'Smith'
+}
+return validate(name).rule().status;
+```
+	false
